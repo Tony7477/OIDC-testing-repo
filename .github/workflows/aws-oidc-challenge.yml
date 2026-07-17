@@ -11,6 +11,6 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::449379158789:role/github-oidc-challenge-role
-          aws-region: ap-south-1
+          aws-region: us-east-1
       - run: aws sts get-caller-identity
       - run: aws s3 ls
